@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="100sp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardElevation="4dp"
+        card_view:cardCornerRadius="3dp"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#8D8787">
+
+            <ImageView
+                android:layout_width="35sp"
+                android:layout_height="35sp"
+                android:id="@+id/img"
+                android:layout_gravity="center"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_alarm_on_white_24dp" />
+
+            <LinearLayout
+                android:id="@+id/master"
+                android:layout_width="wrap_content"
+                android:layout_toEndOf="@id/img"
+                android:layout_toStartOf="@id/del"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/customtime"
+                        style="@style/TextAppearance.AppCompat.Large"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="08:30 am"
+                        android:textColor="#fff" />
+
+                    <TextView
+                        android:id="@+id/customringtone"
+                        style="@style/TextAppearance.AppCompat.Medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:maxLines="1"
+                        android:text="ringtone"
+                        android:textColor="#fff" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/customsat"
+                            android:enabled="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center" />
+
+                        <TextView
+                            style="@style/TextAppearance.AppCompat.Small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:text="Sat"
+                            android:textAlignment="center"
+                            android:textColor="#fff" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/customsun"
+                            android:layout_width="wrap_content"
+                            android:enabled="false"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center" />
+
+                        <TextView
+                            style="@style/TextAppearance.AppCompat.Small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="Sun"
+                            android:textAlignment="center"
+                            android:textColor="#fff" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/custommon"
+                            android:enabled="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center" />
+
+                        <TextView
+                            style="@style/TextAppearance.AppCompat.Small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="Mon"
+                            android:textAlignment="center"
+                            android:textColor="#fff" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/customtue"
+                            android:enabled="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center" />
+
+                        <TextView
+                            style="@style/TextAppearance.AppCompat.Small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="Tue"
+                            android:textAlignment="center"
+                            android:textColor="#fff" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/customwed"
+                            android:layout_width="wrap_content"
+                            android:enabled="false"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center" />
+
+                        <TextView
+                            style="@style/TextAppearance.AppCompat.Small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="Wed"
+                            android:textAlignment="center"
+                            android:textColor="#fff" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/customthu"
+                            android:enabled="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center" />
+
+                        <TextView
+                            style="@style/TextAppearance.AppCompat.Small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="Thu"
+                            android:textAlignment="center"
+                            android:textColor="#fff" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/customfri"
+                            android:layout_width="wrap_content"
+                            android:enabled="false"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center" />
+
+                        <TextView
+                            style="@style/TextAppearance.AppCompat.Small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Fri"
+                            android:textAlignment="center"
+                            android:textColor="#fff" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/del"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:background="#FF0000">
+
+                <ImageView
+                    android:id="@+id/customdel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_delete_forever_black_24dp" />
+
+
+            </RelativeLayout>
+
+
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".addalarm">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="Loud Alarm"
+        android:layout_gravity="center"
+        android:textColor="#fff" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+
+        <EditText
+            android:id="@+id/edthour"
+            android:layout_width="65sp"
+            android:layout_height="45sp"
+            android:textAlignment="center"
+            android:hint="hh..."
+            android:inputType="number"
+            android:padding="4dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/buttonbg"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            android:textSize="35sp"/>
+        <EditText
+            android:id="@+id/edtmin"
+            android:layout_width="65sp"
+            android:layout_margin="4dp"
+            android:textAlignment="center"
+            android:layout_height="45sp"
+            android:padding="4dp"
+            android:inputType="number"
+            android:hint="mm..."
+            android:background="@drawable/buttonbg"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text=":"
+            android:textColor="#fff"
+            android:textSize="35sp"/>
+        <EditText
+            android:id="@+id/edtampm"
+            android:layout_width="65sp"
+            android:layout_height="45sp"
+            android:inputType="text"
+            android:layout_margin="4dp"
+            android:textAlignment="center"
+            android:hint="am/pm"
+            android:background="@drawable/buttonbg"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal">
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/buttonbg"
+            android:layout_marginStart="8dp"
+            android:id="@+id/satarday"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saturday"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:layout_margin="4dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal">
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/buttonbg"
+            android:layout_marginStart="8dp"
+            android:id="@+id/sunday"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sunday"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:layout_margin="4dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal">
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/buttonbg"
+            android:layout_marginStart="8dp"
+            android:id="@+id/monday"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monday"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:layout_margin="4dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal">
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/buttonbg"
+            android:layout_marginStart="8dp"
+            android:id="@+id/tuesday"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tuesday"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:layout_margin="4dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/buttonbg"
+            android:layout_marginStart="8dp"
+            android:id="@+id/wednesday"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wednesday"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:layout_margin="4dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal">
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/buttonbg"
+            android:layout_marginStart="8dp"
+            android:id="@+id/thursday"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thursday"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:layout_margin="4dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal">
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/buttonbg"
+            android:layout_marginStart="8dp"
+            android:id="@+id/friday"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Friday"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:layout_margin="4dp"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:background="@drawable/buttonbg"
+            android:text="ringtone"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:id="@+id/ringtone"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_music_note_black_24dp"
+            android:background="@drawable/buttonbg"
+            android:padding="8dp"
+            android:layout_marginEnd="8dp"
+            android:id="@+id/selectring"/>
+
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/warning"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please Select Minimum One Day."
+        android:textColor="#FF0000"
+        android:textAlignment="center"
+        android:textSize="20sp"/>
+
+
+    <ImageButton
+        android:id="@+id/addalarm"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/ic_add_black_24dp"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:background="@drawable/button_background"/>
+
+
+
+</LinearLayout>
